@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Class Grade Distribution - IRA
+</title><script src="/pair/reports/Scripts/modernizr-2.6.2.js"></script>
+<link href="/pair/reports/Content/bootstrap.css" rel="stylesheet"/>
+<link href="/pair/reports/Content/Site.css" rel="stylesheet"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /></head>
+<body>
+    <form method="post" action="./ClassDistribution" id="ctl01">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script src="/pair/reports/bundles/MsAjaxJs?v=c42ygB2U07n37m_Sfa8ZbLGVu4Rr2gsBo7MvUEnJeZ81" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="Scripts/bootstrap.js" type="text/javascript"></script>
+<script src="Scripts/respond.js" type="text/javascript"></script>
+<script src="/pair/reports/bundles/WebFormsJs?v=AAyiAYwMfvmwjNSBfIMrBAqfU5exDukMVhrRuZ-PDU01" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A7837A18" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl08', 'ctl01', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="https://in.nau.edu/Institutional-Research/" class="navbar-brand">Institutional Research and Analysis</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                   
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            
+    <br /><br />
+ <h4><a href="https://nau.edu/Institutional-Research/Class-Data/">Class Data</a>>>Class Grade Distribution</h4>
+
+
+    <div>Class grade distributions by instructor are provided for Fall 2003 and later.  To protect student privacy, grade distributions are not available for undergraduate classes with fewer than ten students enrolled or for graduate classes with fewer than five students enrolled.  If there was no instructor of record for a class, it is still summarized without an instructor of record.  If there were multiple instructors of record for a class, all instructor names are listed.  
+       <br />
+         <br />
+        This information is refreshed at the end of each term after grades are posted, for the current term and all historical terms, to reflect late posted grades and grade changes.
+    </div>
+    
+     <div> 
+         <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <select name="ctl00$MainContent$TermList" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$TermList\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_TermList">
+	<option value="T">Select Semester</option>
+	<option value="1217">Fall 2021</option>
+	<option value="1214">Summer 2021</option>
+	<option value="1211">Spring 2021</option>
+	<option value="1208">Winter 2020</option>
+	<option value="1207">Fall 2020</option>
+	<option value="1204">Summer 2020</option>
+	<option value="1201">Spring 2020</option>
+	<option value="1198">Winter 2019</option>
+	<option selected="selected" value="1197">Fall 2019</option>
+	<option value="1194">Summer 2019</option>
+	<option value="1191">Spring 2019</option>
+	<option value="1188">Winter 2018</option>
+	<option value="1187">Fall 2018</option>
+	<option value="1184">Summer 2018</option>
+	<option value="1181">Spring 2018</option>
+	<option value="1178">Winter 2017</option>
+	<option value="1177">Fall 2017</option>
+	<option value="1174">Summer 2017</option>
+	<option value="1171">Spring 2017</option>
+	<option value="1168">Winter 2016</option>
+	<option value="1167">Fall 2016</option>
+	<option value="1164">Summer 2016</option>
+	<option value="1161">Spring 2016</option>
+	<option value="1158">Winter 2015</option>
+	<option value="1157">Fall 2015</option>
+	<option value="1154">Summer 2015</option>
+	<option value="1151">Spring 2015</option>
+	<option value="1148">Winter 2014</option>
+	<option value="1147">Fall 2014</option>
+	<option value="1144">Summer 2014</option>
+	<option value="1141">Spring 2014</option>
+	<option value="1138">Winter 2013</option>
+	<option value="1137">Fall 2013</option>
+	<option value="1134">Summer 2013</option>
+	<option value="1131">Spring 2013</option>
+	<option value="1128">Winter 2012</option>
+	<option value="1127">Fall 2012</option>
+	<option value="1124">Summer 2012</option>
+	<option value="1121">Spring 2012</option>
+	<option value="1118">Winter 2011</option>
+	<option value="1117">Fall 2011</option>
+	<option value="1114">Summer 2011</option>
+	<option value="1111">Spring 2011</option>
+	<option value="1108">Winter 2010</option>
+	<option value="1107">Fall 2010</option>
+	<option value="1104">Summer 2010</option>
+	<option value="1101">Spring 2010</option>
+	<option value="1098">Winter 2009</option>
+	<option value="1097">Fall 2009</option>
+	<option value="1094">Summer 2009</option>
+	<option value="1091">Spring 2009</option>
+	<option value="1088">Winter 2008</option>
+	<option value="1087">Fall 2008</option>
+	<option value="1084">Summer 2008</option>
+	<option value="1081">Spring 2008</option>
+	<option value="1078">Winter 2007</option>
+	<option value="1077">Fall 2007</option>
+	<option value="1074">Summer 2007</option>
+	<option value="1071">Spring 2007</option>
+	<option value="1068">Winter 2006</option>
+	<option value="1067">Fall 2006</option>
+	<option value="1064">Summer 2006</option>
+	<option value="1061">Spring 2006</option>
+	<option value="1058">Winter 2005</option>
+	<option value="1057">Fall 2005</option>
+	<option value="1054">Summer 2005</option>
+	<option value="1051">Spring 2005</option>
+	<option value="1048">Winter 2004</option>
+	<option value="1047">Fall 2004</option>
+	<option value="1044">Summer 2004</option>
+	<option value="1041">Spring 2004</option>
+	<option value="1038">Winter 2003</option>
+	<option value="1037">Fall 2003</option>
+
+</select>
+    
+         
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <select name="ctl00$MainContent$SubjectList" id="MainContent_SubjectList">
+	<option value="ACC">ACC</option>
+	<option value="ACM">ACM</option>
+	<option value="ADV">ADV</option>
+	<option value="AHB">AHB</option>
+	<option value="AIS">AIS</option>
+	<option value="ANT">ANT</option>
+	<option value="APMS">APMS</option>
+	<option value="ARB">ARB</option>
+	<option value="ARE">ARE</option>
+	<option value="ARH">ARH</option>
+	<option value="ART">ART</option>
+	<option value="AS">AS</option>
+	<option value="AST">AST</option>
+	<option value="AT">AT</option>
+	<option value="BA">BA</option>
+	<option value="BASW">BASW</option>
+	<option value="BBA">BBA</option>
+	<option value="BIO">BIO</option>
+	<option value="BME">BME</option>
+	<option value="BSC">BSC</option>
+	<option value="BUS">BUS</option>
+	<option value="CCHE">CCHE</option>
+	<option value="CCJ">CCJ</option>
+	<option value="CCS">CCS</option>
+	<option value="CENE">CENE</option>
+	<option value="CHI">CHI</option>
+	<option value="CHM">CHM</option>
+	<option value="CIE">CIE</option>
+	<option value="CINE">CINE</option>
+	<option value="CLA">CLA</option>
+	<option value="CM">CM</option>
+	<option value="CMF">CMF</option>
+	<option value="COM">COM</option>
+	<option selected="selected" value="CS">CS</option>
+	<option value="CSD">CSD</option>
+	<option value="CST">CST</option>
+	<option value="CTE">CTE</option>
+	<option value="DH">DH</option>
+	<option value="DIS">DIS</option>
+	<option value="ECI">ECI</option>
+	<option value="ECO">ECO</option>
+	<option value="EDF">EDF</option>
+	<option value="EDL">EDL</option>
+	<option value="EDR">EDR</option>
+	<option value="EDU">EDU</option>
+	<option value="EE">EE</option>
+	<option value="EES">EES</option>
+	<option value="EGR">EGR</option>
+	<option value="EMGT">EMGT</option>
+	<option value="ENG">ENG</option>
+	<option value="ENT">ENT</option>
+	<option value="ENV">ENV</option>
+	<option value="EPS">EPS</option>
+	<option value="ES">ES</option>
+	<option value="ESE">ESE</option>
+	<option value="ETC">ETC</option>
+	<option value="FIN">FIN</option>
+	<option value="FIT">FIT</option>
+	<option value="FOR">FOR</option>
+	<option value="FRE">FRE</option>
+	<option value="FW">FW</option>
+	<option value="FYS">FYS</option>
+	<option value="GER">GER</option>
+	<option value="GLG">GLG</option>
+	<option value="GSP">GSP</option>
+	<option value="HA">HA</option>
+	<option value="HHS">HHS</option>
+	<option value="HIS">HIS</option>
+	<option value="HON">HON</option>
+	<option value="HS">HS</option>
+	<option value="HUM">HUM</option>
+	<option value="ID">ID</option>
+	<option value="IH">IH</option>
+	<option value="INF">INF</option>
+	<option value="INT">INT</option>
+	<option value="ISM">ISM</option>
+	<option value="ITA">ITA</option>
+	<option value="JLS">JLS</option>
+	<option value="JPN">JPN</option>
+	<option value="JUS">JUS</option>
+	<option value="LAN">LAN</option>
+	<option value="LAS">LAS</option>
+	<option value="LEA">LEA</option>
+	<option value="MAT">MAT</option>
+	<option value="ME">ME</option>
+	<option value="MER">MER</option>
+	<option value="MGT">MGT</option>
+	<option value="MKT">MKT</option>
+	<option value="MOL">MOL</option>
+	<option value="MS">MS</option>
+	<option value="MUP">MUP</option>
+	<option value="MUS">MUS</option>
+	<option value="NAU">NAU</option>
+	<option value="NAV">NAV</option>
+	<option value="NTS">NTS</option>
+	<option value="NUR">NUR</option>
+	<option value="OTD">OTD</option>
+	<option value="PADM">PADM</option>
+	<option value="PE">PE</option>
+	<option value="PHA">PHA</option>
+	<option value="PHI">PHI</option>
+	<option value="PHO">PHO</option>
+	<option value="PHS">PHS</option>
+	<option value="PHY">PHY</option>
+	<option value="PM">PM</option>
+	<option value="POS">POS</option>
+	<option value="PR">PR</option>
+	<option value="PRM">PRM</option>
+	<option value="PSY">PSY</option>
+	<option value="PT">PT</option>
+	<option value="REL">REL</option>
+	<option value="SOC">SOC</option>
+	<option value="SOCIO">SOCIO</option>
+	<option value="SPA">SPA</option>
+	<option value="STA">STA</option>
+	<option value="SUS">SUS</option>
+	<option value="SW">SW</option>
+	<option value="TH">TH</option>
+	<option value="TSM">TSM</option>
+	<option value="USC">USC</option>
+	<option value="VC">VC</option>
+	<option value="WGS">WGS</option>
+
+</select>
+    
+    &nbsp;&nbsp;
+        <input type="submit" name="ctl00$MainContent$Button1" value="Submit" id="MainContent_Button1" />
+       
+        <br />
+        <br />
+</div >
+        <h4 class="text-center"> <span id="MainContent_lblSemester">Fall 2019</span><br />
+            <span id="MainContent_lblsubject"> Subject:  CS</span><br />
+            <span id="MainContent_lblU"> </span><br />
+        </h4>
+
+       
+    
+      <div>
+	<table cellspacing="0" cellpadding="17" rules="all" id="MainContent_GridView1" style="border-width:3px;border-style:solid;width:100%;border-collapse:collapse;">
+		<tr class="large" style="color:#003466;font-weight:bold;">
+			<td align="center" colspan="1">Class</td><td align="center" colspan="1">Section</td><td align="center" colspan="1">Class NBR </td><td align="center" colspan="1">Instructor Name</td><td align="center" colspan="1">A</td><td align="center" colspan="1">B</td><td align="center" colspan="1">C</td><td align="center" colspan="1">D</td><td align="center" colspan="1">F</td><td align="center" colspan="1">AU</td><td align="center" colspan="1">P</td><td align="center" colspan="1">NG</td><td align="center" colspan="1">W</td><td align="center" colspan="1">I</td><td align="center" colspan="1">IP</td><td align="center" colspan="1">Pending</td><td align="center" colspan="1">Total</td>
+		</tr><tr class="large" style="color:#003466;font-weight:bold;">
+
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 112</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">8039</td><td class="small" align="left" style="width:350px;">Otte,Wolf-Dieter Wilhelm</td><td class="small" align="right">33</td><td class="small" align="right">24</td><td class="small" align="right">5</td><td class="small" align="right">1</td><td class="small" align="right">9</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">75</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">1979</td><td class="small" align="left" style="width:350px;">Leverington,Michael E</td><td class="small" align="right">22</td><td class="small" align="right">21</td><td class="small" align="right">19</td><td class="small" align="right">12</td><td class="small" align="right">18</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">97</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">2039</td><td class="small" align="left" style="width:350px;">Leverington,Michael E</td><td class="small" align="right">24</td><td class="small" align="right">19</td><td class="small" align="right">19</td><td class="small" align="right">9</td><td class="small" align="right">15</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">91</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122</td><td class="small" align="left" style="width:50px;">003</td><td class="small" align="left" style="width:50px;">3707</td><td class="small" align="left" style="width:350px;">Navabi,Dariush</td><td class="small" align="right">25</td><td class="small" align="right">17</td><td class="small" align="right">19</td><td class="small" align="right">3</td><td class="small" align="right">15</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">6</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">85</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">2441</td><td class="small" align="left" style="width:350px;">Bransky,Nathaniel Dylan/Navabi,Dariush</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">1</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">10</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">2442</td><td class="small" align="left" style="width:350px;">Bransky,Nathaniel Dylan/Navabi,Dariush</td><td class="small" align="right">21</td><td class="small" align="right">7</td><td class="small" align="right">4</td><td class="small" align="right">1</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">38</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">003</td><td class="small" align="left" style="width:50px;">2567</td><td class="small" align="left" style="width:350px;">Roman,Paul/Navabi,Dariush</td><td class="small" align="right">4</td><td class="small" align="right">9</td><td class="small" align="right">5</td><td class="small" align="right">1</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">26</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">004</td><td class="small" align="left" style="width:50px;">2784</td><td class="small" align="left" style="width:350px;">Navabi,Dariush/Schneider,Tsosie Ernest-Andrew</td><td class="small" align="right">9</td><td class="small" align="right">14</td><td class="small" align="right">3</td><td class="small" align="right">8</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">38</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">005</td><td class="small" align="left" style="width:50px;">2986</td><td class="small" align="left" style="width:350px;">Navabi,Dariush/Schneider,Tsosie Ernest-Andrew</td><td class="small" align="right">13</td><td class="small" align="right">12</td><td class="small" align="right">5</td><td class="small" align="right">1</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">38</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">006</td><td class="small" align="left" style="width:50px;">3462</td><td class="small" align="left" style="width:350px;">Sanders,Austin Ray/Navabi,Dariush</td><td class="small" align="right">24</td><td class="small" align="right">4</td><td class="small" align="right">5</td><td class="small" align="right">3</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">39</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">007</td><td class="small" align="left" style="width:50px;">3719</td><td class="small" align="left" style="width:350px;">Bransky,Nathaniel Dylan/Navabi,Dariush</td><td class="small" align="right">16</td><td class="small" align="right">5</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">31</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">008</td><td class="small" align="left" style="width:50px;">4682</td><td class="small" align="left" style="width:350px;">Navabi,Dariush/Fotoohinasab,Atiyeh</td><td class="small" align="right">9</td><td class="small" align="right">5</td><td class="small" align="right">4</td><td class="small" align="right">1</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">26</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 122L</td><td class="small" align="left" style="width:50px;">009</td><td class="small" align="left" style="width:50px;">9979</td><td class="small" align="left" style="width:350px;">Navabi,Dariush/Saruta,Volodymyr Vasylyovych</td><td class="small" align="right">6</td><td class="small" align="right">3</td><td class="small" align="right">6</td><td class="small" align="right">2</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">20</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 126</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">1970</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai</td><td class="small" align="right">26</td><td class="small" align="right">24</td><td class="small" align="right">15</td><td class="small" align="right">4</td><td class="small" align="right">16</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">90</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 126</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">3720</td><td class="small" align="left" style="width:350px;">Beverly,Robert D</td><td class="small" align="right">25</td><td class="small" align="right">25</td><td class="small" align="right">19</td><td class="small" align="right">2</td><td class="small" align="right">21</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">7</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">99</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 126L</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">2436</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai/Rao,Jun</td><td class="small" align="right">18</td><td class="small" align="right">2</td><td class="small" align="right">2</td><td class="small" align="right">3</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">30</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 126L</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">2437</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai/Schneider,Tsosie Ernest-Andrew</td><td class="small" align="right">16</td><td class="small" align="right">6</td><td class="small" align="right">4</td><td class="small" align="right">3</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">33</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 126L</td><td class="small" align="left" style="width:50px;">003</td><td class="small" align="left" style="width:50px;">3461</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai/Roman,Paul</td><td class="small" align="right">17</td><td class="small" align="right">8</td><td class="small" align="right">3</td><td class="small" align="right">1</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">34</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 126L</td><td class="small" align="left" style="width:50px;">004</td><td class="small" align="left" style="width:50px;">4153</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai/Gummadi,Vinod-Kumar</td><td class="small" align="right">13</td><td class="small" align="right">6</td><td class="small" align="right">2</td><td class="small" align="right">2</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">30</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 126L</td><td class="small" align="left" style="width:50px;">005</td><td class="small" align="left" style="width:50px;">6506</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai/Saruta,Volodymyr Vasylyovych</td><td class="small" align="right">13</td><td class="small" align="right">7</td><td class="small" align="right">3</td><td class="small" align="right">2</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">29</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 126L</td><td class="small" align="left" style="width:50px;">006</td><td class="small" align="left" style="width:50px;">11122</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai</td><td class="small" align="right">12</td><td class="small" align="right">8</td><td class="small" align="right">3</td><td class="small" align="right">2</td><td class="small" align="right">6</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">33</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 136</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">1905</td><td class="small" align="left" style="width:350px;">Elwakil,Mohamed Medhat</td><td class="small" align="right">27</td><td class="small" align="right">17</td><td class="small" align="right">8</td><td class="small" align="right">5</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">65</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 136</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">4137</td><td class="small" align="left" style="width:350px;">Elwakil,Mohamed Medhat</td><td class="small" align="right">8</td><td class="small" align="right">6</td><td class="small" align="right">3</td><td class="small" align="right">3</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">25</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 136L</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">2435</td><td class="small" align="left" style="width:350px;">Elwakil,Mohamed Medhat/Gummadi,Vinod-Kumar</td><td class="small" align="right">1</td><td class="small" align="right">11</td><td class="small" align="right">10</td><td class="small" align="right">3</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">32</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 136L</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">2785</td><td class="small" align="left" style="width:350px;">Rao,Jun/Elwakil,Mohamed Medhat</td><td class="small" align="right">13</td><td class="small" align="right">5</td><td class="small" align="right">4</td><td class="small" align="right">3</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">31</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 136L</td><td class="small" align="left" style="width:50px;">003</td><td class="small" align="left" style="width:50px;">4139</td><td class="small" align="left" style="width:350px;">Rao,Jun/Elwakil,Mohamed Medhat</td><td class="small" align="right">7</td><td class="small" align="right">7</td><td class="small" align="right">4</td><td class="small" align="right">4</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">28</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 200</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">4674</td><td class="small" align="left" style="width:350px;">Beverly,Robert D</td><td class="small" align="right">35</td><td class="small" align="right">12</td><td class="small" align="right">13</td><td class="small" align="right">2</td><td class="small" align="right">6</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">69</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 200</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">9983</td><td class="small" align="left" style="width:350px;">Beverly,Robert D</td><td class="small" align="right">6</td><td class="small" align="right">15</td><td class="small" align="right">4</td><td class="small" align="right">7</td><td class="small" align="right">12</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">45</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 212</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">2559</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai</td><td class="small" align="right">54</td><td class="small" align="right">8</td><td class="small" align="right">3</td><td class="small" align="right">2</td><td class="small" align="right">8</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">76</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 249</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">1907</td><td class="small" align="left" style="width:350px;">Leverington,Michael E</td><td class="small" align="right">16</td><td class="small" align="right">19</td><td class="small" align="right">13</td><td class="small" align="right">6</td><td class="small" align="right">11</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">13</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">78</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 249</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">9985</td><td class="small" align="left" style="width:350px;">Otte,Wolf-Dieter Wilhelm</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">8</td><td class="small" align="right">4</td><td class="small" align="right">18</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">36</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 301</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">1969</td><td class="small" align="left" style="width:350px;">Steinmacher,Igor F</td><td class="small" align="right">31</td><td class="small" align="right">16</td><td class="small" align="right">3</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">51</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 315</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">1980</td><td class="small" align="left" style="width:350px;">Doerry,Eck</td><td class="small" align="right">6</td><td class="small" align="right">14</td><td class="small" align="right">13</td><td class="small" align="right">1</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">39</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 315</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">10780</td><td class="small" align="left" style="width:350px;">McAddis,Colter Nakai</td><td class="small" align="right">13</td><td class="small" align="right">17</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">36</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 345</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">4690</td><td class="small" align="left" style="width:350px;">Navabi,Dariush</td><td class="small" align="right">30</td><td class="small" align="right">26</td><td class="small" align="right">7</td><td class="small" align="right">8</td><td class="small" align="right">3</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">74</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 386</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">7047</td><td class="small" align="left" style="width:350px;">Beverly,Robert D</td><td class="small" align="right">31</td><td class="small" align="right">16</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">53</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 396</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">5340</td><td class="small" align="left" style="width:350px;">Elwakil,Mohamed Medhat</td><td class="small" align="right">10</td><td class="small" align="right">16</td><td class="small" align="right">8</td><td class="small" align="right">1</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">37</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 399</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">4138</td><td class="small" align="left" style="width:350px;">Navabi,Dariush</td><td class="small" align="right">25</td><td class="small" align="right">28</td><td class="small" align="right">9</td><td class="small" align="right">6</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">73</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 413</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">9986</td><td class="small" align="left" style="width:350px;">Kelley,Patrick Edward</td><td class="small" align="right">24</td><td class="small" align="right">16</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">46</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 421</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">1908</td><td class="small" align="left" style="width:350px;">Otte,Wolf-Dieter Wilhelm</td><td class="small" align="right">18</td><td class="small" align="right">14</td><td class="small" align="right">6</td><td class="small" align="right">2</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">44</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 451</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">9987</td><td class="small" align="left" style="width:350px;">Loulergue,Frederic</td><td class="small" align="right">13</td><td class="small" align="right">8</td><td class="small" align="right">7</td><td class="small" align="right">2</td><td class="small" align="right">7</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">38</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 460</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">4708</td><td class="small" align="left" style="width:350px;">Vigil-Hayes,Morgan</td><td class="small" align="right">8</td><td class="small" align="right">14</td><td class="small" align="right">11</td><td class="small" align="right">1</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">38</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 476</td><td class="small" align="left" style="width:50px;">003</td><td class="small" align="left" style="width:50px;">10951</td><td class="small" align="left" style="width:350px;">Doerry,Eck</td><td class="small" align="right">27</td><td class="small" align="right">58</td><td class="small" align="right">11</td><td class="small" align="right">1</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">98</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 480</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">9992</td><td class="small" align="left" style="width:350px;">Leverington,Michael E</td><td class="small" align="right">8</td><td class="small" align="right">10</td><td class="small" align="right">11</td><td class="small" align="right">3</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">12</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">49</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 499</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">2413</td><td class="small" align="left" style="width:350px;">Gowanlock,Michael</td><td class="small" align="right">7</td><td class="small" align="right">11</td><td class="small" align="right">10</td><td class="small" align="right">2</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">10</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">44</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 499</td><td class="small" align="left" style="width:50px;">002</td><td class="small" align="left" style="width:50px;">4693</td><td class="small" align="left" style="width:350px;">Gerosa,Marco Aurelio</td><td class="small" align="right">15</td><td class="small" align="right">12</td><td class="small" align="right">4</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">2</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">35</td>
+		</tr>
+	</table>
+</div>
+     <h4 class="text-center"> <span id="MainContent_lblG">Graduate</span><br /><br />
+             
+        </h4>
+    <div>
+	<table cellspacing="0" cellpadding="17" rules="all" id="MainContent_GridView2" style="border-width:3px;border-style:solid;width:100%;border-collapse:collapse;">
+		<tr class="large" style="color:#003466;font-weight:bold;">
+			<td align="center" colspan="1">Class</td><td align="center" colspan="1">Section</td><td align="center" colspan="1">Class NBR </td><td align="center" colspan="1">Instructor Name</td><td align="center" colspan="1">A</td><td align="center" colspan="1">B</td><td align="center" colspan="1">C</td><td align="center" colspan="1">D</td><td align="center" colspan="1">F</td><td align="center" colspan="1">AU</td><td align="center" colspan="1">P</td><td align="center" colspan="1">NG</td><td align="center" colspan="1">W</td><td align="center" colspan="1">I</td><td align="center" colspan="1">IP</td><td align="center" colspan="1">Pending</td><td align="center" colspan="1">Total</td>
+		</tr><tr class="large" style="color:#003466;font-weight:bold;">
+
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 599</td><td class="small" align="left" style="width:50px;">001</td><td class="small" align="left" style="width:50px;">2568</td><td class="small" align="left" style="width:350px;">Gerosa,Marco Aurelio</td><td class="small" align="right">5</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">5</td>
+		</tr><tr>
+			<td class="small" align="left" style="width:100px;">CS 599</td><td class="small" align="left" style="width:50px;">006</td><td class="small" align="left" style="width:50px;">11243</td><td class="small" align="left" style="width:350px;">Hocking,Toby D</td><td class="small" align="right">6</td><td class="small" align="right">1</td><td class="small" align="right">1</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right">0</td><td class="small" align="right" style="width:50px;">0</td><td class="small" align="right" style="width:50px;">8</td>
+		</tr>
+	</table>
+</div>
+
+    
+    
+       
+
+            
+            
+        </div>
+    </form>
+</body>
+</html>
