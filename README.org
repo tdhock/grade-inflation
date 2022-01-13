@@ -11,6 +11,18 @@ of A's assigned in 2020, 8.4% more than in 2019.
 
 [[file:figure-before-after-percent-diff.png]]
 
+[[file:figure-before-after-level.R]] makes the following figure which
+shows, for a given year, the percent of grades received, over all CS
+classes at a given level.
+
+[[file:figure-before-after-level-percent.png]]
+
+The following figure shows the differences in that percent between
+consecutive years. For example we see a big increase in the percent of
+A's assigned in 2020, for 3xx and 4xx level classes.
+
+[[file:figure-before-after-level-percent-diff.png]]
+
 Data source: http://www7.nau.edu/pair/reports/ClassDistribution
 
 [[file:download.R]] could be used to make POST requests? Just download a
