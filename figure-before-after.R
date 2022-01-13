@@ -17,29 +17,38 @@ dist.tall[, students := as.integer(students.chr)]
 dist.totals <- dist.tall[, .(
   total.students=sum(students)
 ), by=.(year, grade)]
-dist.totals[, prop.students := total.students/sum(total.students), by=year]
+dist.totals[, percent.students := 100*total.students/sum(total.students), by=year]
 
 gg <- ggplot()+
   geom_bar(aes(
-    grade, prop.students),
+    grade, percent.students),
     stat="identity",
     data=dist.totals)+
+  geom_label(aes(
+    grade, percent.students, label=round(percent.students)),
+    stat="identity",
+    alpha=0.75,
+    data=dist.totals)+
   facet_grid(. ~ year)
-png("figure-before-after-prop.png", width=6, height=4, units="in", res=200)
+png("figure-before-after-percent.png", width=6, height=4, units="in", res=200)
 print(gg)
 dev.off()
 
 dist.totals[, next.year := year+1]
 diff.dt <- dist.totals[dist.totals, on=.(next.year=year, grade), nomatch=0L]
 diff.dt[, show.years := paste0(next.year,"-",year)]
-diff.dt[, diff.prop := i.prop.students-prop.students]
-
+diff.dt[, diff.percent := i.percent.students-percent.students]
 gg <- ggplot()+
   geom_bar(aes(
-    grade, diff.prop),
+    grade, diff.percent),
     stat="identity",
     data=diff.dt)+
+  geom_label(aes(
+    grade, diff.percent, label=round(diff.percent,1)),
+    stat="identity",
+    alpha=0.75,
+    data=diff.dt)+
   facet_grid(. ~ show.years)
-png("figure-before-after-prop-diff.png", width=6, height=4, units="in", res=200)
+png("figure-before-after-percent-diff.png", width=6, height=4, units="in", res=200)
 print(gg)
 dev.off()

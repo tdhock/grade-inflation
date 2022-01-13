@@ -1,10 +1,15 @@
 ** 13 Jan 2022
 
-[[file:figure-before-after.R]] makes
+[[file:figure-before-after.R]] makes the following figure which shows, for
+a given year, the percent of grades received, over all CS classes.
 
-[[file:figure-before-after-prop.png]]
+[[file:figure-before-after-percent.png]]
 
-[[file:figure-before-after-prop-diff.png]]
+The following figure shows the differences in that percent between
+consecutive years. For example we see a big increase in the percent
+of A's assigned in 2020, 8.4% more than in 2019.
+
+[[file:figure-before-after-percent-diff.png]]
 
 Data source: http://www7.nau.edu/pair/reports/ClassDistribution
 
